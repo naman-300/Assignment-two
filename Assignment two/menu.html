@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza order form</title>
+    <!-- Linking the css file -->
+    <link rel="stylesheet" href="./css/second.css">
+    <!-- Adding fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pizza For All</h1>
+        <!-- Creating the pizza ordering form -->
+        <form >
+            <!-- Taking info -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <!-- Adding options -->
+            <label for="pizza-type">Pizza Type:</label>
+            <select id="pizza-type" name="pizza-type" required>
+                <option value="cheese">Cheese</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="Spicy">Spicy</option>
+                <option value="chicken">Chicken</option>
+            </select>
+            <!-- Adding pizza sizes -->
+            <label for="pizza-size">Pizza Size:</label>
+            <input type="radio" id="small" required>
+            <label for="small">Small</label>
+            <input type="radio" id="medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="large" >
+            <label for="large">Large</label>
+            <!-- Adding toppings -->
+            <label for="toppings">Toppings:</label>
+            <input type="checkbox" id="pepperoni" >
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="mushrooms" >
+            <label for="mushrooms">Mushrooms</label>
+            <input type="checkbox" id="olives" >
+            <label for="olives">Olives</label>
+            <input type="checkbox" id="Jalapeno" >
+            <label for="Jalapeno">Jalapeno</label>
+            <input type="checkbox" id="Onion">
+            <label for="Onion">Onion</label>
+            <input type="checkbox" id="Chicken" >
+            <label for="Chicken">Chicken</label>
+            <!-- Giving an option for delivery -->
+            <label for="delivery">Delivery:</label>
+            <input type="checkbox" id="delivery" >
+
+            <label for="notes">Additional Notes:</label>
+            <textarea  rows="4"></textarea>
+            <!-- button to submit -->
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+</body>
+</html>
